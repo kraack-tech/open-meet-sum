@@ -1,0 +1,158 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --app-bg: #242424;
+  --app-text: rgba(255, 255, 255, 0.87);
+  --app-link: #d1d5db;
+  --app-link-hover: #ffffff;
+  --app-button-bg: #1a1a1a;
+  --app-button-border: #4a4a4a;
+  --ms-font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --ms-content-max-width: 1200px;
+  --ms-fs-title: 1.28rem;
+  --ms-fs-body: 0.95rem;
+  --ms-fs-subtitle: 0.9rem;
+  --ms-fs-meta: 0.82rem;
+  --ms-line-body: 1.45;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: #5f6672;
+  --scrollbar-thumb-hover: #7b8391;
+
+  color-scheme: dark;
+  color: var(--app-text);
+  background-color: var(--app-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='light'] {
+  --app-bg: #f3f4f6;
+  --app-text: #1f2937;
+  --app-link: #334155;
+  --app-link-hover: #111827;
+  --app-button-bg: #ffffff;
+  --app-button-border: #cbd5e1;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: #9aa4b2;
+  --scrollbar-thumb-hover: #7d8794;
+  color-scheme: light;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 999px;
+  border: none;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-button:single-button,
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button:decrement,
+*::-webkit-scrollbar-button:start,
+*::-webkit-scrollbar-button:end {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.os-theme-meetsum.os-scrollbar,
+.os-theme-meetsum .os-scrollbar {
+  --os-size: 9px;
+  --os-padding-perpendicular: 0px;
+  --os-padding-axis: 0px;
+  --os-track-bg: transparent;
+  --os-handle-bg: var(--scrollbar-thumb);
+  --os-handle-bg-hover: var(--scrollbar-thumb-hover);
+  --os-handle-bg-active: var(--scrollbar-thumb-hover);
+  --os-handle-border-radius: 999px;
+}
+
+.os-theme-meetsum .os-scrollbar-track {
+  background: transparent;
+}
+
+.os-theme-meetsum .os-scrollbar-handle {
+  border-radius: 999px;
+}
+
+a {
+  font-weight: 500;
+  color: var(--app-link);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--app-link-hover);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--ms-font-family);
+  line-height: var(--ms-line-body);
+  background: var(--app-bg);
+  color: var(--app-text);
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--app-button-bg);
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.18s ease;
+}
+button:hover {
+  border-color: var(--app-button-border);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
