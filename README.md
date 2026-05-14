@@ -105,14 +105,7 @@ CORS_ORIGINS=http://localhost:5173,http://localhost:8001
 VITE_API_URL=http://localhost:8001
 ```
 
-## 🤝 Contributing
-We welcome contributions! Please:
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/new-feature`
-3. Make your changes
-4. Commit: `git commit -m 'feat: add new feature'`
-5. Push: `git push origin feature/new-feature`
-6. Open a Pull Request
+
 
 Made with ❤️ for better meetings
 
