@@ -23,7 +23,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+/lib/
 lib64/
 parts/
 sdist/
@@ -104,7 +104,6 @@ tmp/
 *.pt
 *.bin
 *.onnx
-models/
 
 .code-workspace
 *.code-workspace
